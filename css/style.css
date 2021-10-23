@@ -79,3 +79,147 @@ padding-right: 60px;
     border-radius: 50%;
     padding: 5px;
 }
+.slide{
+    border-radius: 20px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.slide::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
+}
+.slide-content{
+    max-width: 400px;
+    position: relative;
+}
+
+.slide-text-light{
+    background-color: grey;
+    color: #fff;
+}
+.slide-title{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 51px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.slide-text{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 32px;
+
+}
+.button-primary{
+    background: #F47322;
+    color: #FFFFFF;
+}
+    
+.button-default{
+    background-color: #fff;
+    color: #5F5F61;
+}
+
+.button{
+    border-radius: 25px;
+    padding: 13px 53px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+.slide-summer{
+   
+    background-image: url(../images/summer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.promo{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.card{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 32px;
+    max-width: 570px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.card::before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+.card-text-light{
+    color: #fff;
+}
+.card-title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    margin-top: 4px;
+    margin-bottom: 21px;
+}
+.card-description{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 168px;
+}
+.card-price{
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    margin-bottom: 8px;
+}
+.card-delivery{
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 25px;
+    
+}
+/* .sweet-basket{
+    background-image: url(../images/sweet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.card-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+}
