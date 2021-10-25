@@ -87,6 +87,8 @@ padding-right: 60px;
     padding: 100px;
     position: relative;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .slide::before{
     content: '';
@@ -100,7 +102,7 @@ padding-right: 60px;
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
 }
 .slide-content{
-    max-width: 400px;
+    max-width: 500px;
     position: relative;
 }
 
@@ -114,6 +116,23 @@ padding-right: 60px;
     line-height: 51px;
     margin-top: 0;
     margin-bottom: 15px;
+}
+.slider-buttons{
+    position: absolute;
+    bottom: 40px;
+    right: 46px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+
+}
+.slider-button{
+    cursor: pointer;
+}
+.swiper{
+    position: relative;
 }
 .slide-text{
     font-weight: bold;
@@ -144,9 +163,15 @@ padding-right: 60px;
 .slide-summer{
    
     background-image: url(../images/summer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
+.slide-autumn{
+    background-image: url(../images/autumn.png);
+}
+.slide-vitamins{
+    background-image: url(../images/vitamins.png);
+}
+
 .promo{
     display: flex;
     justify-content: space-between;
@@ -476,4 +501,61 @@ padding-right: 60px;
     font-size: 14px;
     line-height: 22px;
     color: #49494F;
+}
+
+@media (max-width:1260px)  {
+    .container{
+        max-width: 960px;
+    }
+    .search-form{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .tabs-content{
+        flex-wrap: wrap;
+    }
+    .tabs-card{
+        flex: 50%;
+        max-width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 992px) {
+     .container{
+        max-width: 750px;
+    }
+    .slide {
+        padding: 70px;
+    }
+    .delivery-card{
+        width: calc(50% - 30px);
+    }
+    .footer-logo{
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 560px;
+    }
+    .header{
+        flex-wrap:wrap;
+    }
+    .search-form{
+        order: 5;
+        margin: 15px 0;
+    }
+    .promo{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 90%;
+    }
+    .tabs-card{
+        max-width: 100%;
+    }
 }
