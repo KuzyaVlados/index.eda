@@ -152,8 +152,11 @@ padding-right: 60px;
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin: -20px;
 }
 .card{
+    flex-basis: 50%;
+    margin: 20px;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -163,7 +166,7 @@ padding-right: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
+    
 }
 .card::before{
     z-index: -1;
@@ -222,4 +225,255 @@ padding-right: 60px;
     height: 100%;
     z-index: -2;
     object-fit: cover;
+}
+.delivery-week{
+    padding: 100px 0;
+}
+
+.section-title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 47px;
+}
+.delivery-cards{
+    display:flex;
+    flex-wrap: wrap;
+    /* gap: 30px 31px; */
+    margin: -15px;
+}
+.delivery-card{
+    position: relative;
+    width: 275px;
+    height: 182px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 15px;
+}
+.delivery-image{
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    border-radius: 18px;
+}
+.delivery-tag{
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    
+    border-radius: 30px;
+    padding: 5px 10px;
+   
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    
+}
+.tag-health{
+    background-color: #D0FD89;
+    color:  #49494F;
+}
+.tag-vegetable{
+    background-color: #AEBC41;
+    color:  #fff;
+}
+.tag-meat{
+    background-color: #B86B78;
+    color:  #fff;
+}
+.tag-bird{
+    background-color: #D68334;
+    color:  #fff;
+}
+.tag-fish{
+    background-color: #CD6255;
+    color:  #fff;
+}
+.tag-baby{
+    background-color: #FFFDBF;
+    color:  #49494F;
+}
+.tag-parents{
+    background-color: #F6FDC8;
+    color:  #49494F;
+}
+.tag-festive{
+    background-color: #FEF7FE;
+    color:  #49494F;
+}
+.section-grey{
+    background-color: #F6F6F6;
+}
+.category{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.tabs-content{
+  display: flex;
+  flex-wrap: wrap;
+  /* column-gap: 37px; */
+  gap: 37px;
+  
+}
+.tabs{
+    display: flex;
+    margin: 0;
+    margin-bottom: 62px;
+    padding: 0;
+    list-style-type: none;
+}
+.tabs-link{
+    font-size: 20px;
+    line-height: 23px;
+    color: #49494F;
+    text-decoration: none;
+    margin-right: 58px;
+}
+.tabs-link.active{
+    color: #F37321;
+}
+.tabs-card{
+    max-width: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.tabs-image{
+    max-width: 100%;
+}
+.tabs-card-content{
+    padding: 23px;
+}
+.tabs-title{
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px; 
+    color: #000;
+}
+.tabs-description{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #B9B9BE;
+}
+.tabs-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabs-price{
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 23px;
+    color: #4B4B51;
+    display: block;
+    margin-bottom: 5px;
+}
+.tabs-weight{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #AAAAB1;
+}
+.button-outline{
+    background-color: transparent;
+    cursor: pointer;
+    padding: 15px 25px;
+    border: 2px solid #F37321;
+    border-radius: 33px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F37321;
+}
+.button-center{
+    display: block;
+    margin: 60px auto 0;
+    width: 315px;
+
+}
+.footer{
+    padding: 40px 0;
+    background-color: #F6F6F6;
+}
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+}
+.footer-logo{
+    margin-right: 50px;
+}
+.footer-link{
+    font-size: 16px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #000000;
+    margin-right: 50px;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+    padding: 5px;
+
+}
+.benefits{
+    padding: 100px 0 200px;
+}
+.benefits-title{
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    color: #000000; 
+    margin-top: 0;
+    margin-bottom: 52px;
+}
+.benefits-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px;
+}
+.benefits-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    height: 296px;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    text-align: center;
+    padding: 30px 20px 25px;
+}
+.benefits-card__title{
+    margin-top: 34px;
+    margin-bottom: 13px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 158px;
+    color: #000;
+}
+.benefits-card__description{
+    font-size: 14px;
+    line-height: 22px;
+    color: #49494F;
 }
